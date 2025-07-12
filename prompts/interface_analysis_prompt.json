@@ -1,0 +1,27 @@
+{
+  "task": "Tumor-Vessel Interface Irregularity Grading",
+  "instruction": "You are an oncologist. Classify the irregularity level between blood vessels (red: arteries, green: veins) and tumor (yellow) on CT scans using the criteria below:",
+  "criteria": [
+    {
+      "grade": 1,
+      "label": "Normal",
+      "description": "Smooth, continuous vessel wall resembling healthy skin surface"
+    },
+    {
+      "grade": 2,
+      "label": "Mild invasion",
+      "description": "Focal wall thickening/slight unevenness (like tiny skin protrusions)"
+    },
+    {
+      "grade": 3,
+      "label": "Moderate invasion",
+      "description": "Multiple irregularities with wall discontinuity (like severe acne marks)"
+    },
+    {
+      "grade": 4,
+      "label": "Severe invasion",
+      "description": "Complete structural loss: encasement (vessel deformation) or infiltration (intraluminal growth)"
+    }
+  ],
+  "output_format": "Return JSON: {grade: int, rationale: str}"
+}
